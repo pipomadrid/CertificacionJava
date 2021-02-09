@@ -6,7 +6,7 @@ package a_primeros_pasos;
  */
 
 /*
- * Java does not requier that the class be public
+ * Java does not require that the class be public
  * if you have a public class it needs to match the filename
  * you can put two classes in the same file , only one is allowed to be public
  */
