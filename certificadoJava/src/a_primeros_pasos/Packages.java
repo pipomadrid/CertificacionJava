@@ -58,4 +58,38 @@ public class Packages {
  *  }
  */
 
-// ***************repasar uso de consola para ejecutar Java en vez de Ide***************
+// ***************USING CONSOLE INSTEAD THE IDE***************
+
+/*
+ * We will work whit console instead the IDE, we'll create two package A and B, with two java files 
+ * ClassA  and  ClassB
+ * 
+ * Suppose we have these two classes:
+C:\temp\packagea\ClassA.java   (linux  /tmp/packagea/ClassA.java)
+	package packagea;
+		public class ClassA {
+		}
+C:\temp\packageb\ClassB.java   (linux  /tmp/packageb/ClassB.java)
+	package packageb;
+	import packagea.ClassA;
+		public class ClassB {
+		public static void main(String[] args) {
+			ClassA a;
+			System.out.println("Got it");
+			}
+		}
+ * now wi have to move to temp folder C:\temp   or C /tmp
+ * 
+ * to compile:
+ * 			javac packagea/ClassA.java packageb/ClassB.java
+ * 
+ * this would create  two new files ClassA.class and ClassB.class
+ * 
+ * to run :
+ * 	  		java packageb.ClassB
+ * 
+ *If it works we'll see "got it" printed
+ *
+ ****************************SEE MORE ABOUT CLASSPATH AND JARS******************
+ */
+
