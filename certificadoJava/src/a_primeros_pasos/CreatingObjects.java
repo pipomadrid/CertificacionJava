@@ -17,10 +17,14 @@ public class CreatingObjects {
 		// define a new constructor :
 		
 		//for most classes you don't have to code a constructor, the compiler will supply a default constructor for you
+		
+		 Chicken chicken1= new Chicken(); 
+		 chicken1.name="juanito";
 
 	}
+}
 
-	public class Chick {
+	 class Chick {
 
 		public Chick() { // the name of the constructor matches the name of the class, and there is no
 							// return type
@@ -33,7 +37,7 @@ public class CreatingObjects {
 
 	}
 
-	public class Chicken {
+	 class Chicken {
 		int numEggs = 0;// initialize on line
 		String name;
 
@@ -41,4 +45,7 @@ public class CreatingObjects {
 			name = "Duke";// initialize in constructor
 		}
 	}
-}
+	
+
+	
+
