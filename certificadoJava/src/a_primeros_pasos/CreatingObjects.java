@@ -16,6 +16,7 @@ public class CreatingObjects {
 
 		// define a new constructor :
 		
+<<<<<<< HEAD
 		//for most classes you don't have to code a constructor, the compiler will supply a default constructor for you
 		
 		 Chicken chicken1= new Chicken(); 
@@ -25,6 +26,13 @@ public class CreatingObjects {
 }
 
 	 class Chick {
+=======
+		// for most classes you don't have to code a constructor, the compiler will supply a default constructor for you
+
+	}
+// *******************COSNTRUCTORES**********************
+	public class Chick {
+>>>>>>> 0155b98... lectura y ecritura de campos y orden de inicilización
 
 		public Chick() { // the name of the constructor matches the name of the class, and there is no
 							// return type
@@ -44,8 +52,14 @@ public class CreatingObjects {
 		public Chicken() {
 			name = "Duke";// initialize in constructor
 		}
+<<<<<<< HEAD
 	}
 	
 
 	
 
+=======
+	}	
+	
+}
+>>>>>>> 0155b98... lectura y ecritura de campos y orden de inicilización
