@@ -16,10 +16,10 @@ public class CreatingObjects {
 
 		// define a new constructor :
 		
-		//for most classes you don't have to code a constructor, the compiler will supply a default constructor for you
+		// for most classes you don't have to code a constructor, the compiler will supply a default constructor for you
 
 	}
-
+// *******************COSNTRUCTORES**********************
 	public class Chick {
 
 		public Chick() { // the name of the constructor matches the name of the class, and there is no
@@ -40,5 +40,6 @@ public class CreatingObjects {
 		public Chicken() {
 			name = "Duke";// initialize in constructor
 		}
-	}
+	}	
+	
 }
