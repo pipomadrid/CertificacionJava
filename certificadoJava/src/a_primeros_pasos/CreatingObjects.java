@@ -15,30 +15,12 @@ public class CreatingObjects {
 		// object
 
 		// define a new constructor :
-		
-<<<<<<< HEAD
-		// for most classes you don't have to code a constructor, the compiler will supply a default constructor for you
 
-	}
-=======
-<<<<<<< HEAD
 		//for most classes you don't have to code a constructor, the compiler will supply a default constructor for you
-		
-		 Chicken chicken1= new Chicken(); 
-		 chicken1.name="juanito";
 
 	}
-}
 
-	 class Chick {
-=======
-		// for most classes you don't have to code a constructor, the compiler will supply a default constructor for you
-
-	}
->>>>>>> tmp
-// *******************COSNTRUCTORES**********************
 	public class Chick {
->>>>>>> 0155b98... lectura y ecritura de campos y orden de inicilización
 
 		public Chick() { // the name of the constructor matches the name of the class, and there is no
 							// return type
@@ -51,24 +33,12 @@ public class CreatingObjects {
 
 	}
 
-	 class Chicken {
+	public class Chicken {
 		int numEggs = 0;// initialize on line
 		String name;
 
 		public Chicken() {
 			name = "Duke";// initialize in constructor
 		}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 	}
-	
-
-	
-
-=======
->>>>>>> tmp
-	}	
-	
 }
->>>>>>> 0155b98... lectura y ecritura de campos y orden de inicilización
