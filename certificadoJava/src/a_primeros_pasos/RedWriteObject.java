@@ -25,7 +25,7 @@ class Swan {
 	
 	int numberEggs; 
 }
-class Name{
+class FirstName{
 	// we can also  read and write fields directly on the line you have
 	// declared them
 	String first= "Peter"; // write
