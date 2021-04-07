@@ -25,12 +25,12 @@ class Swan {
 	
 	int numberEggs; 
 }
-class Name{
+class FirstName{
 	// we can also  read and write fields directly on the line you have
 	// declared them
 	String first= "Peter"; // write
 	String second= "Daniel"; // write
-	String full= first + second; //read (firs nd second)and write both
+	String full= first + second; //read (first and second)and write both
 }
 
 //*****************CODE BLOCKS************************

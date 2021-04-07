@@ -22,7 +22,7 @@ public class ReadAndWriteFields {
 }
 
 		//You can even read and write fields directly on the line declaring them:
-	class Name {
+	 class Name {
 		String first = "Theodore";
 		String last = "Moose";
 		String full = first + last;
