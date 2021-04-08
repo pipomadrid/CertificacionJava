@@ -1,0 +1,40 @@
+Benefits of java
+
+
+
+1 Object oriented
+
+	Java allows for functional programming within a class, but object oriented is still the main
+	organization of code.
+
+
+2 Encapsulation
+
+	Java supports access modifiers to protect data from unintended access
+	and modification
+
+3 Platform independent
+
+	Java is an interpreted language because it gets compiled to bytecode.
+	“write once, run everywhere.”
+
+
+
+4 Robust
+
+
+	One of the major advantages of Java over C++ is that it prevents memory leaks.
+	Java manages memory on its own and does garbage collection automatically
+
+
+
+5 Simple
+
+
+
+
+
+6  Secure
+
+	Java code runs inside the JVM. This creates a sandbox that makes it hard for Java
+	code to do evil things to the computer it is running on.

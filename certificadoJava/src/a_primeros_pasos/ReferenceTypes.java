@@ -21,11 +21,11 @@ public class ReferenceTypes {
 ■ 				A reference can be assigned to another object of the same type.
 ■ 				A reference can be assigned to a new object using the new keyword.
 			 */
-		today = new java.util.Date();// now point to a Dte object and can be used to access the field nd methods of this object
+		today = new java.util.Date();// now point to a Date object and can be used to access the field nd methods of this object
 		greeting = "hello"; // point to the String object "hello"
 		
 		
-		System.out.println(today.getDay()); // we can acces to the objects methods
+		System.out.println(today.getDay()); // we can access to the objects methods
 	
 		System.out.println(greeting.charAt(1));
 		
