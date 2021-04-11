@@ -3,7 +3,7 @@ package OperatorsAndStatements;
 public class OperatorPrecedence {
 	
 	/*
-	 * For the OCA exam, you’ll need know a specifi c
+	 * For the OCA exam, you’ll need know a specific
 		subset of Java operators, how to apply them, and the order in which they should be applied
 		
 		Java operators are not necessarily evaluated from left-to-right order

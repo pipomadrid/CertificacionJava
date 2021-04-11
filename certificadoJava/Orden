@@ -20,5 +20,10 @@ HACER EJERCICIOS
 
 OPERATORS AND STATEMENTS
 
-1-operatorPrecedence
+1- OperatorPrecedence
 2- BinaryOperators
+3 -UnaryOperators
+4 -AssigmentsOperators
+5 -CompoundAssignmentOperators
+6- RelationalOperators
+7 -LogicalOperators
