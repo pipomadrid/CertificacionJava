@@ -1,6 +1,6 @@
 orden clases certificado
 
-PRIMEROS PASOS
+   PRIMEROS PASOS
 1- Clasesjava
 2- WritingMain
 3 -Packages
@@ -18,7 +18,7 @@ PRIMEROS PASOS
 
 HACER EJERCICIOS
 
-OPERATORS 
+   OPERATORS 
 
 1- OperatorPrecedence
 2- BinaryOperators
@@ -31,5 +31,12 @@ OPERATORS
 9- ternaryOperator
 
 
-STATEMENTS
+   STATEMENTS
 1-if_then
+2-SwitchStatement
+3-WhileStatement
+4-DoWhile
+5-ForStatement
+6-ForEachStatement
+7-NestedLoops
+8-BreakStatement
