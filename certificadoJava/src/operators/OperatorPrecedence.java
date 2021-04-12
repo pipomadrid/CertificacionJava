@@ -1,4 +1,4 @@
-package OperatorsAndStatements;
+package operators;
 
 public class OperatorPrecedence {
 	

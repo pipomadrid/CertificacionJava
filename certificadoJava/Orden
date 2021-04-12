@@ -18,7 +18,7 @@ PRIMEROS PASOS
 
 HACER EJERCICIOS
 
-OPERATORS AND STATEMENTS
+OPERATORS 
 
 1- OperatorPrecedence
 2- BinaryOperators
@@ -27,3 +27,9 @@ OPERATORS AND STATEMENTS
 5 -CompoundAssignmentOperators
 6- RelationalOperators
 7 -LogicalOperators
+8- EqualityOperators
+9- ternaryOperator
+
+
+STATEMENTS
+1-if_then
