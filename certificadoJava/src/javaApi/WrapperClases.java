@@ -1,5 +1,8 @@
 package javaApi;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class WrapperClases {
 	
 	/*
@@ -59,6 +62,44 @@ public class WrapperClases {
 		 * 
 		 * 
 		 */
+		
+		/*
+		 * 
+		 * AUTOBOXING
+		 * 
+		 * Since java 5 you can just type the primitive value and Java will convert it to the relevant wrapper class
+		 * This is Autoboxing
+		 * 
+		 * 
+		 */
+		List<Double> weights = new ArrayList<>();
+		weights.add(50.5); // [50.5]  autoboxes the double into a Double and adds that to the List
+		weights.add(new Double(60)); // [50.5, 60.0]  here we are adding a Double directly 
+		weights.remove(50.5); // [60.0]  autoboxes double into Double and passes to remove it
+		double first = weights.get(0); // 60.0   Retrieves(recupera) the Double and autoboxes it into a double
+		
+		/*
+		 * 
+		 * we can add a null to the list but we can't get a int  value of null.
+		 * BE CAREFULL 
+		 */
+		
+		List<Integer> heights = new ArrayList<>();
+		 heights.add(null);
+		// int h = heights.get(0); // NullPointerException
+
+		 
+		 /*
+		  * BE CAREFULL  when autoboxing an integer
+		  * 
+		  */
+		 
+		 List<Integer> numbers = new ArrayList<>();
+		 numbers.add(1); // autoboxes an int into an Integer anda add to the List
+		 numbers.add(2);// autoboxes an int into an Integer anda add to the List
+		 numbers.remove(1); // here remove can take an object(Integer) of an Index int for parameters, java will take the last one
+		 //if you want to remove the number 1 you have to write numbers.remove(new Integer(1)) to force wrapper class to use
+		 System.out.println(numbers);
 	}
 	
 
