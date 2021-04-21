@@ -56,7 +56,7 @@ public class UsingArrayList {
 		 
 		/* 
 		 * remove first matching value in the arraylist 
-		 * or remve element at index specified
+		 * or remove element at index specified
 		 * 
 		 * returns boolean or E:
 		 * 
