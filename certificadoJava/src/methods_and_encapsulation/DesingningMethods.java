@@ -25,7 +25,7 @@ public class DesingningMethods {
 	 * 
 	 * 	public void walk1() {} 
 		default void walk2() {} // DOES NOT COMPILE    default is not a valid access modifier
-		void public walk3() {} // DOES NOT COMPILE   the  access modifier is specified after the returntype.
+		void public walk3() {} // DOES NOT COMPILE   the  access modifier is specified after the return type.
 		void walk4() {}
 	 */
 	
@@ -131,25 +131,25 @@ public class DesingningMethods {
 		// TODO Auto-generated method stub
 
 
-	
+
 	}
-	
+
 	//PAY ATTENTION  RETURN TYPES
 
 	int integer() {
 		return 9;
 	}
 	int long1() {
-			return 9L; // DOES NOT COMPILE because the value must match the retun type
+		return 9L; // DOES NOT COMPILE because the value must match the retun type
 	}
 
 	int integerExpanded() {
 		int temp = 9;
 		return temp;
-		}
-		int longExpanded() {
+	}
+	int longExpanded() {
 		int temp = 9L; // DOES NOT COMPILE  the same case as previus but with returning a variable
 		return temp;
-		}
+	}
 
 }

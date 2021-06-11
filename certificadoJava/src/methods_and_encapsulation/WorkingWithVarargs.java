@@ -4,9 +4,9 @@ public class WorkingWithVarargs {
 	
 	/*
 	 * A method can use varargs parameters as if it is an array
-	 * A vararg parameter must be the last element in a methds parameter
+	 * A vararg parameter must be the last element in a methods parameter
 	 * list
-	 * You are only llowed to have one varg parameter for method
+	 * You are only allowed to have one varag parameter for method
 	 */
 	
 	/*
@@ -42,7 +42,7 @@ public class WorkingWithVarargs {
 	public static void walk(int start, int... nums) {
 		System.out.println(nums.length);// see main
 	}
-	public static void run(int... nums) {
-			System.out.println(nums[1]);
+	public static void run(int... nums) { 
+			System.out.println(nums[1]);//5
 	}
 }
