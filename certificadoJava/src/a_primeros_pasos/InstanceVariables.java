@@ -5,17 +5,22 @@ public class InstanceVariables {
 	 static int MAX_LENGTH= 5; // class variable
 	 int length; // instance variable
 	
-	/*INSTANCE  and  CLASS VARIABLES(STATIC)
-	 * Are also called fields	
-	 * Are shared across multiple objects
+	/*	INSTANCE 
+	 * Variables that are not local variables are known as instance variables or class variables.
+		Instance variables are also called fields.Are shared across multiple objects
+	 * 
+	 * 
+	 *  CLASS VARIABLES(STATIC)
+	 * 
 	 * has the keyword static before it
-	 * Do not require  you to initialize them
-	 * As soon as you declare them , they are given a default value:
+	 * Instance and class variables do not require you to initialize them.As soon as you declare them , 
+	 * they are given a default value:
+	 * 
 	 * 
 	 * boolean     					false
 	 * byte, short, int, long       0
 	 * float, double        		0.0 
-	 * char                 		\u0000
+	 * char                 		\u0000 (NUL)
 	 * everything else          	null
 	 */
 
