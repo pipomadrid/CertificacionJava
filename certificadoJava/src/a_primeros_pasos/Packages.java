@@ -18,7 +18,7 @@ import java.util.*;   // import all the classes in a Package, it doesn't slows t
  * 	import java.nio.file.Files;
  * 	import java.nio.file.Paths;
  * but you can,t use:
- * 	import java.nio.*;     only classes
+ * 	import java.nio.*;     only classes, no Packages
  * 	import java.nio.*.*;    only one wildcard
  * 	import java.nio.files.Paths.*;  only classes
  */	
@@ -78,7 +78,7 @@ C:\temp\packageb\ClassB.java   (linux  /tmp/packageb/ClassB.java)
 			System.out.println("Got it");
 			}
 		}
- * now wi have to move to temp folder C:\temp   or C /tmp
+ * now we have to move to temp folder C:\temp   or C /tmp
  * 
  * to compile:
  * 			javac packagea/ClassA.java packageb/ClassB.java
