@@ -55,7 +55,7 @@ class Bird{
 	 * Bird(){
 	 * super(); // first call the super constructor
 	 * 
-	 * {System.out.println("Instance Initialization");}  // copies the  instace initializer  after the super
+	 * {System.out.println("Instance Initialization");}  // copies the  instance initializer  after the super
 	 *
 	 *  System.out.println("Constructor");  // 
 	 * }
