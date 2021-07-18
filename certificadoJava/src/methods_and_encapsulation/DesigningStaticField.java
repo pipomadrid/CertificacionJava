@@ -16,6 +16,9 @@ public class DesigningStaticField {
 		Initializers.NUM_BUCKETS=4; // we can't  update a final variable
 		Initializers.values.add("hola");  // we are allowed to call methods, but we can' reassign the final values to point a different object
 		//Initializers.values= new ArrayList<>();
+		Initializers.values.set(0,"adios"); // we cn call method again
+		System.out.println(Initializers.values);
+		Initializers.values = new ArrayList<String>(); //We cannot reasign a constant field
 	}
 
 }
