@@ -53,7 +53,7 @@ class Bird{
 	// the compiler do like this:
 	/*
 	 * Bird(){
-	 * super(); // first call the super constructor
+	 * super(); //first call the super constructor
 	 * 
 	 * {System.out.println("Instance Initialization");}  // copies the  instance initializer  after the super
 	 *
