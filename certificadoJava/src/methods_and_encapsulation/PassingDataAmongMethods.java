@@ -2,8 +2,8 @@ package methods_and_encapsulation;
 
 /*
  * 
- * Java is a “pass-by-value” language. This means that a copy of the variable is made and the
-	method receives that copy Other language use pass-by-reference, that use the original values, no copies 
+ * Java is a pass by value language. This means that a copy of the variable is made and the
+	method receives that copy.Other language use pass-by-reference, that use the original values, no copies 
  */
 
 public class PassingDataAmongMethods {
@@ -19,13 +19,20 @@ public class PassingDataAmongMethods {
 		//References type
 		String name= "Pedro";
 		speak(name);
-		System.out.println(name); //Pedro
+		System.out.println(name); // Pedro
 		
-		//Calling methods on the pararmeters will affect the caller
+		//Calling methods on the parameters will affect the caller
 		
 		StringBuilder name2 = new StringBuilder();
 		speak(name2);
-		System.out.println(name2); //Marina
+		System.out.println(name2); // Marina
+		
+		//Return  values 
+		int num2 = 1;
+		sumNumber(num2); // we are doing nothing with the return value
+		System.out.println(num2);  // 1 
+		
+		
 			
 	}
 	
@@ -36,7 +43,7 @@ public class PassingDataAmongMethods {
 		name = "Bruno";
 		
 	}
-	public static void speak(StringBuilder s) { // In this case  s and name points to the same StringBuilder
+	public static void speak(StringBuilder s) { // In this case  s and name2 points to the same StringBuilder
 		
 		s.append("Marina"); //We are using a method, we don't reassing the variable
 		
@@ -47,6 +54,9 @@ public class PassingDataAmongMethods {
 		 */
 	}
 	
-	//Continue on page 191 , not finish yet
+	public static int sumNumber(int num2) {
+		num2++;
+		return num2;
+	}
 
 }
