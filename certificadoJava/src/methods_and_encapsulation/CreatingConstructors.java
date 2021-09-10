@@ -176,6 +176,8 @@ class Mouse {
 		 */
 		
 		//SEE THE CLASS  ExampleOrderOfInitialization.java
+		
+		
 	}
 
 
