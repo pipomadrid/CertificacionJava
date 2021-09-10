@@ -9,6 +9,9 @@ public class CreatingConstructors {
 
 		Mouse mouse = new Mouse(15);
 		mouse.print();// 15 16 6
+		
+		InitialtionOrder init = new InitialtionOrder();
+		
 	}
 
 }
@@ -34,7 +37,7 @@ class Bunny {
 	
 	/*
 	 *DEFAULT CONSTRUCTOR
-		Every class in Java has a constructor whether you code one or not. If you don’t include any
+		Every class in Java has a constructor whether you code one or not. If you donï¿½t include any
 		constructors in the class, Java will create one for you without any parameters.
 		
 		public class Rabbit {
@@ -64,7 +67,7 @@ class Bunny {
 	 */
 	
 	/*OVERLOADING CONSTRUCTORS
-		Up to now, you’ve only seen one constructor per class. You can have multiple constructors
+		Up to now, youï¿½ve only seen one constructor per class. You can have multiple constructors
 		in the same class as long as they have different method signatures
 	 * 
 	 * 
@@ -129,8 +132,9 @@ class Mouse {
 	public void print() {
 		System.out.println(weight + " " + numTeeth + " " + numWhiskers);
 	}
+}
 	
-	/*the final Fields can be assigned in the constructor .
+	/*THE FINAL FIELDS can be assigned in the constructor .
 	By the time the constructor completes, all final instance variables
 	must have been set:
 	
@@ -143,6 +147,36 @@ class Mouse {
 			}
 		}
 	*/
+	
+	/*ORDER OF INITIALIZATION
+	 * 
+	 * IMPORTANT
+	 *  1- SUPERCLASS
+	 *  2-STATIC VARIABLE DECLARATION AND STATIC INITIALIZERS
+	 *  3-INSTANCE VARIABLE DECLARATIONS 
+	 *  4- THE COSNTRUCTOR
+	 * 
+	 */
+	class InitialtionOrder {
+		//no Superclass  1
+		private String name = "Bruno"; //instance variable declarations 5
+		{System.out.println(name);} //Instance block initializers  6
+		private static int COUNT  = 0;// static variable declaration  2
+		static {System.out.println(COUNT);} //  static initializer  3
+		static  {COUNT += 10; System.out.println(COUNT);}//  static initializer  4 (3 and 4 goes in order)
+		public InitialtionOrder() { //constructor 7
+			System.out.println("Constructor");
+		}
+		
+		/*output:
+		 * 0
+		 * 10
+		 * Bruno
+		 * Constructor
+		 */
+		
+		//SEE THE CLASS  ExampleOrderOfInitialization.java
+	}
 
-}
+
 
