@@ -22,7 +22,7 @@ public class CreatingInmutableClasses {
 		
 		System.out.println(sb);
 		
-		Immutable example2 = new Immutable(sb);
+		Immutable example2 = new Immutable(sb); //If the class is inmutable, after this point can't be change
 		sb.append(" que tal");//change the StringBuilder but not the String 
 	    String gotString = example2.getValue();
 	    sb.append("adding again");
@@ -63,7 +63,9 @@ class Immutable {
 	
 	private StringBuilder builder2; 
 	public Immutable(StringBuilder b) {
-		builder2 = b;
+		
+		//builder2 = b; // here we have a problem because builder points to the Stringbuilder that instance the Object, (check what returns in main)
+		builder2 = new StringBuilder(b);// we have to make a defensive copy to prevent that
 	}
 	public String getValue() { //now we are returning a String, and we can't change it
 		return builder2.toString();
