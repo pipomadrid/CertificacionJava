@@ -1,0 +1,13 @@
+Be able to identify correct and incorrect method declarations.
+
+Identify when a method or field is accessible.
+
+Recognize valid and invalid uses of static imports
+
+State the output of code involving methods
+
+Evaluate code involving constructors
+
+Be able to recognize when a class is properly encapsulated
+
+Write simple lambda expressions

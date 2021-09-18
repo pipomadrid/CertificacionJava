@@ -2,6 +2,7 @@ package methods_and_encapsulation;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class WrintingSimpleLambdas {
 	
@@ -21,6 +22,7 @@ public class WrintingSimpleLambdas {
 		 animals.add(new Animal("turtle", false, true));
 		 
 		 print(animals,a -> a.canHop());
+		 
 		 
 		 /*
 		  * if we didn't use lambda we have to write classes that implements the method of the interface to check the animals that
@@ -60,6 +62,7 @@ public class WrintingSimpleLambdas {
 				because it uses a different variable name:
 				(a, b) -> { int c = 0; return 5;}
 		  */
+		 PredicateSearch.print (animals,a ->!a.canSwim());// Use Predicate Interface that Java provides
 		 
 		 
 	}
@@ -92,6 +95,54 @@ interface CheckTrait{
 	boolean test(Animal a);	
 }
 
+
+//PREDICATES
+/*
+ * Lambdas work with interfaces that have only one method-->Functional interfaces.
+ * 
+ * You can imagine that we’d have to create lots of interfaces like this to use lambdas.
+ * Java recognizes that this is a common problem and provides such an interface
+	for us. It’s in the package java.util.function and the gist(esencia) of it is as follows:
+	
+			public interface Predicate<T> {
+				boolean test(T t);
+			}
+ * The only difference is that it uses this type T instead of Animal.
+ * This means we don’t need our own interface anymore
+ * 
+ */
+
+class PredicateSearch {
+
+	 static void print(List<Animal> animals, Predicate<Animal> checker) { //we are using predicate instead Checktrait
+		 System.out.print("Interfaz Predicate: ");
+		 for (Animal animal : animals) {
+			 if (checker.test(animal))
+				 System.out.print( animal + " ");
+		 }
+		 System.out.println();
+	 	}
+	 
+
+	
+	 
+	
+}
+
+/*
+ * Java 8 even integrated the Predicate interface into some existing classes.
+ * There is onlyone you need to know for the exam. ArrayList declares a removeIf() method that takes a Predicate
+ * 
+ * List<String> bunnies = new ArrayList<>();
+	 bunnies.add("long ear");
+	 bunnies.add("floppy");
+	 bunnies.add("hoppy");
+	 System.out.println(bunnies); // [long ear, floppy, hoppy]
+	 bunnies.removeIf(s -> s.charAt(0) != 'h');  // takes a string and returns a boolean
+	 System.out.println(bunnies); // [hoppy]
+ * 
+ */
+	
 
 
 
