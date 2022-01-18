@@ -4,7 +4,13 @@ package methods_and_encapsulation;
 to your class.Another common technique is making classes immutable so they cannot be
 changed at all.
 you can pass them around your application with a guarantee that the caller didn’t change anything.
-This helps make programs easier to maintain
+This helps make programs easier to maintain.
+
+Remember, immutable is only measured after the object is constructed. Immutable
+classes are allowed to have values. They just can't change after instantiation.
+
+When you are writing an immutable class, be careful about the return types. On the
+surface, this class appears to be immutable since there is no setter(example StringBuilder)
 */
 
 public class CreatingInmutableClasses {
@@ -27,6 +33,7 @@ public class CreatingInmutableClasses {
 	    String gotString = example2.getValue();
 	    sb.append("adding again");
 	    System.out.println(gotString);
+	    System.out.println("Hola");
 	}
 
 }
@@ -65,11 +72,10 @@ class Immutable {
 	public Immutable(StringBuilder b) {
 		
 		//builder2 = b; // here we have a problem because builder points to the Stringbuilder that instance the Object, (check what returns in main)
-		builder2 = new StringBuilder(b);// we have to make a defensive copy to prevent that
+		builder2 = new StringBuilder(b);// we have to make a DEFENSIVE COPY to prevent that
 	}
 	public String getValue() { //now we are returning a String, and we can't change it
 		return builder2.toString();
 	
-
 	}
 }
